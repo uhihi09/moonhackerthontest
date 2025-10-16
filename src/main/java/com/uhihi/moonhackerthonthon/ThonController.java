@@ -10,11 +10,11 @@ public class ThonController {
     @PostMapping
     public String receive(@RequestBody Map<String, Object> data) {
         System.out.println("data: " + data);
-        return "데이터 리시브";
+        return "data received";
     }
 
     @GetMapping
     public String hello() {
-        return "서버 연결 성공";
+        return "server connect success";
     }
 }
